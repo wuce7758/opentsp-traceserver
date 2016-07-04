@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapbar.traceserver.mapper.FenceMapper">
+	<resultMap type="com.mapbar.traceserver.model.Fence" id="fence">
+		<id property="id" column="id" jdbcType="INTEGER" />
+		<result property="ak" column="ak" jdbcType="VARCHAR" />
+		<result property="serviceId" column="service_id" jdbcType="VARCHAR" />
+		<result property="name" column="fence_name" jdbcType="VARCHAR" />
+		<result property="desc" column="fence_desc" jdbcType="VARCHAR" />
+		<result property="creator" column="creator" jdbcType="VARCHAR" />
+		<result property="monitoredPersons" column="monitored_persons" jdbcType="VARCHAR" />
+		<result property="validTimes" column="valid_times" jdbcType="VARCHAR" />
+		<result property="validCycle" column="valid_cycle" jdbcType="INTEGER" />
+		<result property="validDate" column="valid_date" jdbcType="VARCHAR" />
+		<result property="validDays" column="valid_days" jdbcType="VARCHAR" />
+		<result property="shape" column="shape" jdbcType="INTEGER" />
+		<result property="coordType" column="coord_type" jdbcType="INTEGER" />
+		<result property="center" column="center" jdbcType="VARCHAR" />
+		<result property="radius" column="radius" jdbcType="INTEGER" />
+		<result property="alarmCondition" column="alarm_condition" jdbcType="INTEGER" />
+		<result property="areaCode" column="area_code" jdbcType="VARCHAR" />
+		<result property="polyValue" column="poly_value" jdbcType="VARCHAR" />
+		<result property="createTime" column="create_time" jdbcType="VARCHAR" />
+		<result property="modifyTime" column="modify_time" jdbcType="VARCHAR" />
+		
+	</resultMap>
+</mapper>

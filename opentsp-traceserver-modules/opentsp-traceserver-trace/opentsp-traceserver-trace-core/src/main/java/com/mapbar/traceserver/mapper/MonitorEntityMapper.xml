@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapbar.traceserver.mapper.MonitorEntityMapper">
+	<resultMap type="com.mapbar.traceserver.model.MonitorEntity" id="monitorEntity">
+		<id property="id" column="id" jdbcType="INTEGER" />
+		<result property="ak" column="ak" jdbcType="VARCHAR" />
+		<result property="serviceId" column="service_id" jdbcType="VARCHAR" />
+		<result property="entityName" column="entity_name" jdbcType="VARCHAR" />
+		<result property="createTime" column="create_time" jdbcType="VARCHAR" />
+		<result property="modifyTime" column="mofify_time" jdbcType="VARCHAR" />
+	</resultMap>
+</mapper>
