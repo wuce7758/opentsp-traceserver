@@ -1,21 +1,9 @@
-Step1:在本地添加maven依赖
+#鹰眼服务前期设计与开发
 
-    <mirror>
-        <id>central</id>
-        <mirrorOf>*</mirrorOf>
-        <url>https://wdnexus.mapbar.com/content/groups/public/</url>
-    </mirror>
+###WeDriveT服务API产品是面向车联网提供的标准服务，为车厂、wedrive自有产品提供标准的车联网服务接口。
 
-Step2:将项目cacerts证书，复制到本地JDK目录java_home\jre\lib\security
-
-Step3:maven compile install
-
-Step4:启动
-
-      opentsp-gateway-web   Application.java, VM options:-Dspring.profiles.active=local
-
-      opentsp-helloword-core   Application.java, VM options:-Dspring.profiles.active=local
-
-Step5:访问http://localhost:8090/hello/getTime?param=1
-
-徐冰浩
+    1,涉及到的技术mysql5.5
+    2,基础架构基于平台框架（微服务框架,docker部署）
+    3,数据库访问层mybatis
+    4,接口定义及数据库设计文档,doc/*
+    5,其它
